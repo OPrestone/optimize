@@ -1,0 +1,1693 @@
+@extends('includes.layout')
+
+@section('title')
+    {{ "The Standard - Breaking News, Kenya News, World News and Videos" }}
+@endsection
+
+@section('description',
+htmlspecialchars_decode("Kenya's Bold Newspaper. Find the latest news in politics, business, entertainment, sports, live radio and TV",ENT_QUOTES))
+
+@section('keywords',
+htmlspecialchars_decode("Breaking news, news online, Kenya news, world news, Standard Digital, news video, KTN Home, weather, business, money, politics, law, technology, entertainment, education, travel, health, special reports, autos, KTN News, BTV, Farm Kenya, Travelog",ENT_QUOTES))
+
+@section('author','Standard Group PLC')
+
+@section('adslots')
+    <script>
+        window.googletag = window.googletag || {cmd: []};
+        var ads=null;
+		var ads=null;
+        googletag.cmd.push(function() {
+
+              var leaderboard = googletag.sizeMapping().addSize([1024, 768], [[970, 90],[970, 250], [728, 90]]).addSize([640, 480], [[320,100],[320,50]]).addSize([0, 0], [320,100]).build();
+            var squarebanner = googletag.sizeMapping().addSize([1024, 768], [[300, 250], [336, 280]]).addSize([640, 480], [[300,250],[320,100],[320,50]]).addSize([0, 0], [[300,250],[320,100],[320,50]]).build();
+			 var midarticle = googletag.sizeMapping().addSize([1024, 768], [[970, 90],[970, 250],[728, 90],[300,250],[336,280]]).addSize([640,480], [[300,250],[320,100],[320,50]]).addSize([0, 0], [[300,250],[320,100],[320,50]]).build();
+             
+			 @if((new \Jenssegers\Agent\Agent())->isDesktop())
+             ads=googletag.defineSlot('/24409412/sg_main_home_1', [[970,250],[728, 90],[970,90]],'div-gpt-ad-1616648265131-0').addService(googletag.pubads());
+             googletag.defineSlot('/24409412/sg_main_home_2',[[300,250],[200,200],[320, 100],[320,50],[300,100],[300,50]], 'div-gpt-ad-1616648403375-0').addService(googletag.pubads());
+             ads3=googletag.defineSlot('/24409412/sg_main_home_3',[[970,250],[728, 90],[970,90],[468,60],[300,250]], 'div-gpt-ad-1616648477821-0').addService(googletag.pubads());
+             googletag.defineSlot('/24409412/sg_main_home_4', [[300,250],[200,200],[320, 100],[320,50],[300,100],[300,50]], 'div-gpt-ad-1616648534372-0').addService(googletag.pubads());
+             googletag.defineSlot('/24409412/sg_main_home_5',  [[970,250],[728, 90],[970,90],[468,60],[300,250]], 'div-gpt-ad-1616648609844-0').addService(googletag.pubads());
+             googletag.defineSlot('/24409412/sg_main_home_6',  [[970,250],[728, 90],[970,90],[468,60],[300,250]], 'div-gpt-ad-1616648677903-0').addService(googletag.pubads());
+			 googletag.defineSlot('/24409412/sg_main_home_7',  [[970,250],[728, 90],[970,90],[468,60],[300,250]], 'div-gpt-ad-1616648677903-1').addService(googletag.pubads());
+			 googletag.defineSlot('/24409412/sg_main_home_8',  [[970,250],[728, 90],[970,90],[468,60],[300,250]], 'div-gpt-ad-1616648677903-2').addService(googletag.pubads());
+			
+			
+			@else
+			 
+			
+			ads=googletag.defineSlot('/24409412/sg_main_home_1', [[300,250],[200,200],[320, 100],[320,50],[300,100],[300,50]],'div-gpt-ad-1616648265131-0').addService(googletag.pubads());
+            googletag.defineSlot('/24409412/sg_main_home_2',[[300,250],[200,200],[320, 100],[320,50],[300,100],[300,50]], 'div-gpt-ad-1616648403375-0').addService(googletag.pubads());
+            ads3=googletag.defineSlot('/24409412/sg_main_home_3',[[300,250],[200,200],[320, 100],[320,50],[300,100],[300,50]], 'div-gpt-ad-1616648477821-0').addService(googletag.pubads());
+            googletag.defineSlot('/24409412/sg_main_home_4', [[300,250],[200,200],[320, 100],[320,50],[300,100],[300,50]], 'div-gpt-ad-1616648534372-0').addService(googletag.pubads());
+            googletag.defineSlot('/24409412/sg_main_home_5',  [[300,250],[200,200],[320, 100],[320,50],[300,100],[300,50]], 'div-gpt-ad-1616648609844-0').addService(googletag.pubads());
+            googletag.defineSlot('/24409412/sg_main_home_6',  [[300,250],[200,200],[320, 100],[320,50],[300,100],[300,50]], 'div-gpt-ad-1616648677903-0').addService(googletag.pubads());
+			googletag.defineSlot('/24409412/sg_main_home_7',  [[300,250],[200,200],[320, 100],[320,50],[300,100],[300,50]], 'div-gpt-ad-1616648677903-1').addService(googletag.pubads());
+			googletag.defineSlot('/24409412/sg_main_home_8',  [[300,250],[200,200],[320, 100],[320,50],[300,100],[300,50]], 'div-gpt-ad-1616648677903-2').addService(googletag.pubads());
+			
+			
+			@endif
+			
+            googletag.pubads().enableSingleRequest();
+            googletag.pubads().disableInitialLoad();
+            googletag.enableServices();
+			
+			
+			   setTimeout(function(){
+		  setInterval(function refreshAds(){
+                googletag.cmd.push(
+                    function(){
+                        googletag.pubads().refresh([ads]); 
+ 						
+                    });
+            },30000);
+			},30000);
+			 setTimeout(function(){
+		  setInterval(function refreshAds(){
+                googletag.cmd.push(
+                    function(){
+                        googletag.pubads().refresh([ads3]); 
+ 						
+                    });
+            },30000);
+			},30000);
+
+          
+        });
+    </script>
+	
+		
+<!--Amazon!-->
+<script>
+
+@if((new \Jenssegers\Agent\Agent())->isDesktop())
+
+
+!function(a9,a,p,s,t,A,g){if(a[a9])return;function q(c,r){a[a9]._Q.push([c,r])}a[a9]={init:function(){q("i",arguments)},fetchBids:function(){q("f",arguments)},setDisplayBids:function(){},targetingKeys:function(){return[]},_Q:[]};A=p.createElement(s);A.async=!0;A.src=t;g=p.getElementsByTagName(s)[0];g.parentNode.insertBefore(A,g)}("apstag",window,document,"script","//c.amazon-adsystem.com/aax2/apstag.js");
+apstag.init({
+     pubID: 'fc752468-3b32-47a3-aa0d-e95bc8c0c9d9', 
+     adServer: 'googletag'
+});
+apstag.fetchBids({
+     slots: [{
+         slotID: 'div-gpt-ad-1616648265131-0',  
+         slotName: '/24409412/sg_main_home_1',  
+         sizes: [[970,250],[728, 90],[970,90],[468,60],[300,250]]
+     },
+     {
+         slotID: 'div-gpt-ad-1616648403375-0',  
+         slotName: '/24409412/sg_main_home_2', 
+         sizes: [[300,250],[200,200],[320, 100],[320,50],[300,100],[300,50]]
+     },
+     {
+         slotID: 'div-gpt-ad-1616648477821-0',  
+         slotName: '/24409412/sg_main_home_3', 
+         sizes:[[970,250],[728, 90],[970,90],[468,60],[300,250]]
+     },
+     {
+         slotID: 'div-gpt-ad-1616648534372-0',  
+         slotName: '/24409412/sg_main_home_4', 
+         sizes: [[300,250],[200,200],[320, 100],[320,50],[300,100],[300,50]]
+     }
+	 ,
+     {
+         slotID: 'div-gpt-ad-1616648609844-0',  
+         slotName: '/24409412/sg_main_home_5', 
+         sizes:[[970,250],[728, 90],[970,90],[468,60],[300,250],[336,280]]
+     }
+	 ,
+     {
+         slotID: 'div-gpt-ad-1616648677903-0',  
+         slotName: '/24409412/sg_main_home_6', 
+         sizes:[[970,250],[728, 90],[970,90],[468,60],[300,250]]
+     }
+	 ],
+     timeout: 2e3
+}, function(bids) {
+     googletag.cmd.push(function(){
+         apstag.setDisplayBids();
+         googletag.pubads().refresh();
+     });
+}); 
+
+@else
+	
+
+
+
+!function(a9,a,p,s,t,A,g){if(a[a9])return;function q(c,r){a[a9]._Q.push([c,r])}a[a9]={init:function(){q("i",arguments)},fetchBids:function(){q("f",arguments)},setDisplayBids:function(){},targetingKeys:function(){return[]},_Q:[]};A=p.createElement(s);A.async=!0;A.src=t;g=p.getElementsByTagName(s)[0];g.parentNode.insertBefore(A,g)}("apstag",window,document,"script","//c.amazon-adsystem.com/aax2/apstag.js");
+apstag.init({
+     pubID: 'fc752468-3b32-47a3-aa0d-e95bc8c0c9d9', 
+     adServer: 'googletag'
+});
+apstag.fetchBids({
+     slots: [{
+         slotID: 'div-gpt-ad-1616648265131-0',  
+         slotName: '/24409412/sg_main_home_1',  
+         sizes: [[300,250],[336,280],[200,200],[320, 100],[320,50],[300,100],[300,50]]
+     },
+     {
+         slotID: 'div-gpt-ad-1616648403375-0',  
+         slotName: '/24409412/sg_main_home_2', 
+         sizes: [[300,250],[336,280],[200,200],[320, 100],[320,50],[300,100],[300,50]]
+     },
+     {
+         slotID: 'div-gpt-ad-1616648477821-0',  
+         slotName: '/24409412/sg_main_home_3', 
+         sizes:[[300,250],[336,280],[200,200],[320, 100],[320,50],[300,100],[300,50]]
+     },
+     {
+         slotID: 'div-gpt-ad-1616648534372-0',  
+         slotName: '/24409412/sg_main_home_4', 
+         sizes: [[300,250],[336,280],[200,200],[320, 100],[320,50],[300,100],[300,50]]
+     }
+	 ,
+     {
+         slotID: 'div-gpt-ad-1616648609844-0',  
+         slotName: '/24409412/sg_main_home_5', 
+         sizes:[[300,250],[336,280],[200,200],[320, 100],[320,50],[300,100],[300,50]]
+     }
+	 ,
+     {
+         slotID: 'div-gpt-ad-1616648677903-0',  
+         slotName: '/24409412/sg_main_home_6', 
+         sizes:[[300,250],[336,280],[200,200],[320, 100],[320,50],[300,100],[300,50]]
+     }
+	 ],
+     timeout: 2e3
+}, function(bids) {
+     googletag.cmd.push(function(){
+         apstag.setDisplayBids();
+         googletag.pubads().refresh();
+     });
+}); 
+
+ 
+@endif
+
+
+</script>
+@endsection
+
+@section('amp')
+    <link rel="amphtml" href="{{ url('/amp') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <style>
+        .insider-main{
+            font-size: 35px;
+        }
+    </style>
+@endsection
+
+@section('content')
+    @inject('check','App\Utils\Helper')
+    <section class="main mb-4">
+
+        <div class="container pt-4 pt-md-0">
+		@if(!$articles->isPremium())
+            <div class="row justify-content-center mb-3 mx-0">
+                <div class="col-12 text-center ad-max">
+                    <!-- /24409412/sg_main_home_1 -->
+                    <div id='div-gpt-ad-1616648265131-0' class="w-100 ">
+                        <script>
+                            googletag.cmd.push(function() { googletag.display('div-gpt-ad-1616648265131-0'); });
+                        </script>
+                    </div>
+                </div>
+            </div>
+			@endif
+			
+            <div class="row mx-0">
+                @if(!is_null($stories->breakingnews))
+                    @include('includes.breakingNews')
+                @endif
+                @if(!is_null($stories->live))
+                    @if($stories->live->isactive == 1)
+                        @include('includes.liveStream')
+                    @endif
+                @endif
+            </div>
+
+            <div class="row mx-md-0 mt-md-2">
+
+                <div class="col-md-7 col-12">
+                    @foreach($stories->top->slice(0,1)->all() as $article)
+                    <div class="card mb-3 mb-md-0 border-0">
+                        <a href="{{ $articles->makeUrl($article) }}" class="links text-dark" >
+
+                            <h1 class="card-title mb-1">{{ $article->title }} {!! $check->is_premium($article->premium) !!}</h1><br/>
+
+                            <div class="card mb-md-3 mb-0">
+                                <div class="row no-gutters mx-0">
+                                    <div class="col-md-4 order-md-1 order-12">
+                                        <h5 class="category-title mb-md-3 mt-2 politics"><b>{{ !is_null($article->category) ? $article->category->name: 'standard' }}</b></h5>
+                                        <div class="card-body px-0 py-0">
+                                            <p class="card-text d-none d-md-block">
+                                                {!! substr(strip_tags($articles->getParagraphs(preg_replace('/<iframe.*?\/iframe>/i','',$article->story),10)),0,500) !!} <br /><strong>Read More &raquo;</strong>
+                                            </p>
+
+                                            <p class="card-text mt-md-2"><small class="text-muted">By {{ $article->author }} | {{ $timeutil->ago(date_create($article->publishdate)) }}</small></p>
+
+                                            <div class="row">
+                                                <div class="col-12  line-top d-md-none "></div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-8 px-md-3 order-1 order-md-12">
+                                        <div class="row mx-md-0 g-0">
+                                        <div class="item ">
+                                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                                 data-original="{{ $articles->imageLocation($article->thumbURL) }}"
+                                                 onerror="this.onerror=null; this.src='{{ asset("assets/images/pic.png") }}'"
+                                                 class="first-img bg-light border-0 lazy" alt="{{ $article->title }}">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+
+                    @endforeach
+                </div>
+
+                <div class="row col-md-5 second-col px-0 mx-0">
+
+                    <div class="col-md-6 border-left col-12 px-0 row mx-0">
+                        @foreach($stories->top->slice(1,2)->all() as $article)
+                            <a href="{{ $articles->makeUrl($article) }}" class="links text-dark" >
+                        <div class="card mb-3 mb-md-0 col-md-12">
+                            <div class="item ">
+                              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                                 data-original="{{ $articles->imageLocation($article->thumbURL) }}" alt="{{ $article->title }}"
+                                     class="card-img-top image-height w-100 lazy"> </div>
+                            <div class="card-body pt-1 p-0">
+                                <h6 class="category-title mb-0 mt-1 politics"><b>{{ $article->category->name }}</b></h6>
+                                <strong class="card-text">{{ $article->title }} {!! $check->is_premium($article->premium) !!} </strong>
+                                <p class="card-text"><small class="text-muted">By {{ $article->author }} | {{ $timeutil->ago(date_create($article->publishdate)) }}</small></p>
+                            </div>
+                        </div>
+                            </a>
+                        @endforeach
+                    </div>
+                    <div class="col-md-6 border-left col-12">
+                        @foreach($stories->top->slice(3,4)->all() as $article)
+                            <a href="{{ $articles->makeUrl($article) }}" class="links text-dark" >
+                        <div class="card-body px-0 {{ $loop->index==0? 'py-0':'py-1' }} {{ $loop->index < 3 ? 'border-bottom':'' }}">
+                            <strong class="card-text"> {{ $article->title }} {!! $check->is_premium($article->premium) !!}</strong>
+                            <h6 class="category-title politics mb-1"><b>{{ $article->category->name }}</b></h6>
+{{--                            @if($loop->index == 0)<p class="mb-0 d-none d-md-block">{{ $article->summary}}</p>@endif--}}
+                            <p class="card-text"><small class="text-muted">By {{ $article->author }} | {{ $timeutil->ago(date_create($article->publishdate)) }}</small></p>
+
+                        </div>
+                            </a>
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+	
+	
+	
+    <section class="break mb-4">
+        <div class="container">
+            <div class="col-12  line-top pt-3"></div>
+            <div class="section-title d-flex mb-3">
+                <span class="bg-red">.</span>
+                <h5>
+                    <b><a href="https://www.standardmedia.co.ke/" class="links text-dark">LATEST</a></b></h5>
+            </div>
+            <div class="row align-items-start">
+                
+                @foreach($stories->latest as $article)
+                   <div class="col-md-3 col-12 row mx-0 {{ $loop->index < 3? 'border-right' : '' }}">
+                        <a href="{{ $articles->makeUrl($article) }}" class="links text-dark" >
+                            <div class="card mb-3">
+                                <div class="item ">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                         data-original="{{ $articles->imageLocation($article->thumbURL) }}"
+                                         onerror="this.onerror=null; this.src='{{ asset("assets/images/pic.png") }}'"
+                                         alt="{{ $article->title }}"
+                                         class="card-img-top bg-light border-0 lazy">
+                                </div>
+                                <div class="card-body p-2 pb-0">
+                                    <p class="card-text mb-0"><small class="text-muted">By {{ $article->author }} | {{ $timeutil->ago(date_create($article->publishdate)) }}</small></p>
+                                    <strong class="card-text text-style">{{ $article->title }} {!! $check->is_premium($article->premium) !!}</strong>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+				
+				@endforeach
+				
+				
+            </div>
+             
+        </div>
+    </section>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<section class="break mb-4">
+        <div class="container">
+		@if(!$articles->isPremium())
+			<div class="col-12 text-center ad-max mb-4  line-top pt-4">
+                    <!-- /24409412/sg_main_home_3 -->
+                    <div id='div-gpt-ad-1616648477821-0' class="w-100 ">
+                        <script>
+                            googletag.cmd.push(function() { googletag.display('div-gpt-ad-1616648477821-0'); });
+                        </script>
+                    </div>
+                </div>
+		  @endif
+          <div class="col-12  line-top pt-3"></div>
+            <div class="section-title d-flex mb-3">
+                <span class="bg-pink">.</span>
+                <h5>
+                    <b><a href="{{ url('category/588/national') }}" class="links text-dark">NATIONAL</a></b></h5>
+            </div>
+            <div class="row align-items-start">
+                @foreach($stories->national as $article)
+                                    <div class="col-md-3 col-12 row mx-0 {{ $loop->index < 3? 'border-right' : '' }}">
+                        <a href="{{ $articles->makeUrl($article) }}" class="links text-dark" >
+                            <div class="card mb-3">
+                                <div class="item ">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                         data-original="{{ $articles->imageLocation($article->thumbURL) }}"
+                                         onerror="this.onerror=null; this.src='{{ asset("assets/images/pic.png") }}'"
+                                         alt="{{ $article->title }}"
+                                         class="card-img-top bg-light border-0 lazy">
+                                </div>
+                                <div class="card-body p-2 pb-0">
+                                    <p class="card-text mb-0"><small class="text-muted">By {{ $article->author }} | {{ $timeutil->ago(date_create($article->publishdate)) }}</small></p>
+                                    <strong class="card-text text-style">{{ $article->title }} {!! $check->is_premium($article->premium) !!}</strong>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                @endforeach
+            </div>
+            <div class="col-12  line-top pt-3 mb-2"></div>
+        </div>
+    </section>
+    <section class="main mb-4">
+
+        <div class="container">
+            <div class="row justify-content-center mb-3 mx-0">
+               
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="section-title-two d-flex mb-3">
+                        <span class="">.</span>
+                        <h4>
+                            <b><a href="{{ url('category/1/counties') }}" class="links text-dark">COUNTIES</a></b>
+                        </h4>
+                    </div>
+
+                    <div class="card mb-3 border-0 pr-md-2">
+                        @foreach($stories->counties->slice(0,1)->all() as $article)
+						 @if($loop->index == 3 && !$articles->isPremium())
+                      <div class="col-md-3 col-12 row mx-0 p-md-0">
+                          <!-- /24409412/sg_main_home_2 -->
+                          <div id='div-gpt-ad-1616648403375-0' class="w-100">
+                              <script>
+                                  googletag.cmd.push(function() { googletag.display('div-gpt-ad-1616648403375-0'); });
+                              </script>
+                          </div>
+                      </div>
+                    @else
+                            <a href="{{ $articles->makeUrl($article) }}" class="links text-dark" >
+                        <div class="row g-0">
+                            <div class="col-md-7">
+                                <div class="card-body p-0 pl-0">
+                                    <h4>
+                                        <b class="card-text"> {{ $article->title }} {!! $check->is_premium($article->premium) !!} </b></h4>
+
+                                    <p class="card-text d-none d-md-block">
+                                        {{ $article->summary }}
+                                    </p>
+
+                                    <p class="card-text d-none d-md-block"><small class="text-muted">By {{ $article->author }} | {{ $timeutil->ago(date_create($article->publishdate)) }}</small></p>
+                                </div>
+                            </div>
+                            <div class="col-md-5 img px-0 item ">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                     data-original="{{ $articles->imageLocation($article->thumbURL) }}"
+                                     onerror="this.onerror=null; this.src='{{ asset("assets/images/pic.png") }}'"
+                                     class="h-100 bg-light border-0 lazy" alt="{{ $article->title }}">
+
+                                <p class="card-text d-md-none p-2 mb-0 px-3"><small class="text-muted">By {{ $article->author }} | {{ $timeutil->ago(date_create($article->publishdate)) }}</small></p>
+                            </div>
+                        </div>
+                            </a>
+							@endif
+                        @endforeach
+                    </div>
+                    <div class="row border-top mt-4 smaller ml-md-0 pr-md-2">
+                        <div class="col-md-6 col-12 mb-md-3 pl-md-0 pt-3 border-right">
+                            @foreach($stories->counties->slice(1,5)->all() as $article)
+                                <a href="{{ $articles->makeUrl($article) }}" class="links text-dark" >
+                            <div class="card">
+                                <div class="row g-0 mx-0">
+                                    <div class="col-8 px-0">
+                                        <div class="card-body pl-0 py-2">
+                                            <strong class="card-text"> {{ $article->title }} {!! $check->is_premium($article->premium) !!} </strong>
+                                            <p class="card-text mb-0"><small class="text-muted">By {{ $article->author }} | {{ $timeutil->ago(date_create($article->publishdate)) }}</small></p>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-4 pr-0">
+                                        <div class="item ">
+                                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                                 data-original="{{ $articles->imageLocation($article->thumbURL) }}"
+                                                 onerror="this.onerror=null; this.src='{{ asset("assets/images/pic.png") }}'"
+                                                 class=" bg-light border-0 lazy">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                </a>
+                            @endforeach
+                        </div>
+                        <div class="col-md-6 col-12 mb-3 pr-md-0 pt-3">
+                            @foreach($stories->counties->slice(6,5)->all() as $article)
+                                <a href="{{ $articles->makeUrl($article) }}" class="links text-dark" >
+                                    <div class="card">
+                                        <div class="row g-0 mx-0">
+                                            <div class="col-8 px-0">
+                                                <div class="card-body pl-0 py-2">
+                                                    <strong class="card-text"> {{ $article->title }} {!! $check->is_premium($article->premium) !!} </strong>
+                                                    <p class="card-text"><small class="text-muted">By {{ $article->author }} | {{ $timeutil->ago(date_create($article->publishdate)) }}</small></p>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-4 pr-0">
+                                                <div class="item ">
+                                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                                         data-original="{{ $articles->imageLocation($article->thumbURL) }}"
+                                                         onerror="this.onerror=null; this.src='{{ asset("assets/images/pic.png") }}'"
+                                                         class=" bg-light border-0 lazy">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            @endforeach
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row col-md-6 pr-0 mx-0 no-p">
+                    <div class="row">
+                        <div class="section-title-two d-flex mb-0">
+                            <span class="" style="background:#00adbc !important">.</span>
+                            <h4>
+                                <b><a href="{{ url('category/4/economy') }}" class="links text-dark">BUSINESS</a></b>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-7 border-left col-12 px-0 row mx-0 mt-0 pt-0">
+
+                            @foreach($stories->economy->slice(0,2)->all() as $article)
+                                <a href="{{ $articles->makeUrl($article) }}" class="links text-dark" >
+                                    <div class="card mb-3 col-md-12 ">
+                                        <h4>
+                                            <b class="card-text"> {{ $article->title }} {!! $check->is_premium($article->premium) !!} </b></h4>
+                                        <h6 class="card-title politics mb-3"><b>{{ strtoupper($article->category->name) }}</b></h6>
+                                        <div class="item ">
+                                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                                 data-original="{{ $articles->imageLocation($article->thumbURL) }}"
+                                                 onerror="this.onerror=null; this.src='{{ asset("assets/images/pic.png") }}'"
+                                                 class=" h205 bg-light border-0 lazy">
+                                        </div>
+                                        <div class="card-body p-md-2 py-0 mt-md-2">
+                                            <p class="mb-0 d-none d-md-block">{{ $article->summary }}.</p>
+                                            <p class="card-text my-md-2"><small class="text-muted">By {{ $article->author }} | {{ $timeutil->ago(date_create($article->publishdate)) }}</small></p>
+                                        </div>
+                                    </div>
+                                </a>
+                            @endforeach
+                        </div>
+
+                        <div class="col-md-5 col-12 border-left col-12 world">
+                        <div class="sticky-top">
+                            @foreach($stories->economy->slice(2,5)->all() as $article)
+                                @if($loop->index == 0)
+                                    <a href="{{ $articles->makeUrl($article) }}" class="links text-dark" >
+                                        <div class="item ">
+                                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                                 data-original="{{ $articles->imageLocation($article->thumbURL) }}"
+                                                 onerror="this.onerror=null; this.src='{{ asset("assets/images/pic.png") }}'"
+                                                 class="h133 bg-light border-0 lazy">
+                                        </div>
+                                    </a>
+                                @endif
+                                <a href="{{ $articles->makeUrl($article) }}" class="links text-dark" >
+                                    <div class="card-body px-0 pt-2 {{ $loop->index < 4? 'border-bottom': '' }} mt-1">
+                                        <strong class="card-text">{{ $article->title }} {!! $check->is_premium($article->premium) !!} </strong>
+                                        <h6 class="category-title world-color my-2"><b>{{ strtoupper($article->category->name) }}</b></h6>
+                                        <p class="card-text mb-0"><small class="text-muted">By {{ $article->author }} | {{ $timeutil->ago(date_create($article->publishdate)) }}</small></p>
+                                    </div>
+                                </a>
+                            @endforeach
+                        </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+	
+	
+	@if(!$articles->isPremium())
+		<section class="break mb-4">
+        <div class="container">
+			<div class="col-12 text-center ad-max mb-4  line-top pt-4">
+                    <!-- /24409412/sg_main_home_7 -->
+                    <div id='div-gpt-ad-1616648677903-1' class="w-100 ">
+                        <script>
+                            googletag.cmd.push(function() { googletag.display('div-gpt-ad-1616648677903-1'); });
+                        </script>
+                    </div>
+                </div>
+				</div>
+                </section>
+		  @endif
+	 <section class="break mb-4">
+        <div class="container">
+
+            <div class="col-12  line-top pt-3"></div>
+            <div class="section-title d-flex mb-3">
+                <span class="bg-red">.</span>
+                <h5>
+                    <b><a href="{{ url('category/7/opinion') }}" class="links text-dark">OPINION</a></b></h5>
+            </div>
+            <div class="row align-items-start">
+                @foreach($stories->opinion as $article)
+                    <div class="col-md-3 col-12 row mx-0 {{ $loop->index < 3? 'border-right' : '' }}">
+                        <a href="{{ $articles->makeUrl($article) }}" class="links text-dark" >
+                            <div class="card mb-3">
+                                <div class="item ">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                         data-original="{{ $articles->imageLocation($article->thumbURL) }}"
+                                         onerror="this.onerror=null; this.src='{{ asset("assets/images/pic.png") }}'"
+                                         alt="{{ $article->title }}"
+                                         class="card-img-top bg-light border-0 lazy">
+                                </div>
+                                <div class="card-body p-2 pb-0">
+                                    <p class="card-text mb-0"><small class="text-muted">By {{ $article->author }} | {{ $timeutil->ago(date_create($article->publishdate)) }}</small></p>
+                                    <strong class="card-text text-style">{{ $article->title }} {!! $check->is_premium($article->premium) !!}</strong>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                @endforeach
+            </div>
+            <div class="col-12  line-top pt-3 mb-0 d-none"></div>
+        </div>
+    </section>
+    
+    <section class="main mb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="col-12  line-top pt-3"></div>
+                    <div class="section-title-three d-flex mb-3">
+                        <span class="">.</span>
+                        <h4>
+                            <b><a href="{{ url('amp/category/3/politics') }}" class="links text-dark">POLITICS</a></b>
+                        </h4>
+                    </div>
+                    <div class="card mb-3 border-0 pr-3">
+                        @foreach($stories->politics->slice(0,1)->all() as $article)
+                            <a href="{{ $articles->makeUrl($article) }}" class="links text-dark" >
+                        <div class="row g-0">
+                            <div class="col-md-5">
+                                <div class="card-body py-md-5 p-0 pr-md-3 border-right">
+                                    <h4>
+                                        <b class="card-text">{{ $article->title }} {!! $check->is_premium($article->premium) !!}</b></h4>
+
+                                    <p class="card-text d-none d-md-block"> {{ $article->summary }} </p>
+
+                                    <p class="card-text d-none d-md-block"><small class="text-muted">By {{ $article->author }} | {{ $timeutil->ago(date_create($article->publishdate)) }}</small></p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-7 item  pr-0">
+                                <div class="row mx-md-0 ">
+                              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                                 data-original="{{ $articles->imageLocation($article->thumbURL) }}"
+                                     onerror="this.onerror=null; this.src='{{ asset("assets/images/pic.png") }}'"
+                                     class="h335 bg-light border-0 lazy">
+                                    <p class="card-text d-md-none p-2 px-3"><small class="text-muted">By {{ $article->author }} | {{ $timeutil->ago(date_create($article->publishdate)) }}</small></p>
+                                </div>
+                            </div>
+                        </div>
+                            </a>
+                        @endforeach
+                    </div>
+                    <div class="col-12  line-top"></div>
+                    <div class="row mx-0 ">
+
+                        <div class="col-md-6 mt-3  p-0 border-right">
+                            @foreach($stories->politics->slice(1,1)->all() as $article)
+                                <a href="{{ $articles->makeUrl($article) }}" class="links text-dark" >
+                            <div class="card-body pl-0 py-0">
+                                <h6 class="category-title politics"><b>{{ strtoupper($article->category->name) }}</b></h6>
+                                <h4>
+                                    <b class="card-text">{{ $article->title }} {!! $check->is_premium($article->premium) !!}</b></h4>
+
+                                <p class="card-text d-none d-md-block">{{ $article->summary }}</p>
+
+                                <p class="card-text"><small class="text-muted">By {{ $article->author }} | {{ $timeutil->ago(date_create($article->publishdate)) }}</small></p>
+                            </div>
+                                </a>
+                            @endforeach
+                        </div>
+
+                        <div class="col-md-6 mt-3  pr-0">
+                            @foreach($stories->politics->slice(2,2)->all() as $article)
+                                <a href="{{ $articles->makeUrl($article) }}" class="links text-dark" >
+                            <div class="card-body pl-0 py-0 {{ $loop->index== 0 ? 'border-bottom':'' }}">
+                                <h6 class="category-title politics"><b>{{ strtoupper($article->category->name) }}</b></h6>
+                                <strong class="card-text">{{ $article->title }} {!! $check->is_premium($article->premium) !!}</strong>
+                                <p class="card-text"><small class="text-muted">By {{ $article->author }} | {{ $timeutil->ago(date_create($article->publishdate)) }}</small></p>
+
+                            </div>
+                                </a>
+                            @endforeach
+                        </div>
+                        <div class="col-md-12 mt-3 p-0 line-bottom line-top pt-3">
+                            @foreach($stories->politics->slice(4,1)->all() as $article)
+                                <a href="{{ $articles->makeUrl($article) }}" class="links text-dark" >
+                            <div class="card mb-3 border-0 pr-3">
+                                <div class="row g-0">
+                                    <div class="col-md-7 py-4">
+                                        <div class="card-body p-0 pr-3">
+                                            <h6 class="category-title politics"><b>{{ strtoupper($article->category->name) }}</b></h6>
+                                            <h4>
+                                                <b class="card-text">{{ $article->title }} {!! $check->is_premium($article->premium) !!}</b></h4>
+
+                                            <p class="card-text d-none d-md-block">{{ $article->summary }}</p>
+
+                                            <p class="card-text d-none d-md-block"><small class="text-muted">By {{ $article->author }} | {{ $timeutil->ago(date_create($article->publishdate)) }}</small></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5 item  pr-0">
+
+                                      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                                 data-original="{{ $articles->imageLocation($article->thumbURL) }}"
+                                                 onerror="this.onerror=null; this.src='{{ asset("assets/images/pic.png") }}'"
+                                                 class="h230 bg-light border-0 lazy">
+                                        <p class="card-text d-md-none p-2 px-3"><small class="text-muted">By {{ $article->author }} | {{ $timeutil->ago(date_create($article->publishdate)) }}</small></p>
+
+                                    </div>
+                                </div>
+                            </div>
+                                </a>
+                            @endforeach
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 border-left col-12">
+                    <div class="col-12  line-top pt-3 sticky-top">
+                    @foreach($stories->videos->slice(0,1)->all() as $video)
+                        <a href="{{ $videos->videoLink($video) }}" class="links text-dark">
+                    <div class="item ">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-original="{{ $videos->videoImageLink($video) }}"
+                                 onerror="this.onerror=null; this.src='{{ asset("assets/images/pic.png") }}'"
+                                 class="bg-light h200 border-0 lazy" alt="{{ $video->title }}">
+                    </div>
+                    <div class="card-body px-0 border-bottom mt-0 pt-2">
+                        <h6 class="category-title video my-2">
+                            <img src="https://img.icons8.com/ios-filled/20/ffffff/play--v1.png" class="vid-icon" /> <b>VIDEO</b></h6>
+                        <strong class="card-text main-vid">{{ $video->title }}</strong>
+                        <p class="card-text mb-0"><small class="text-muted">{{ $timeutil->ago(date_create($video->publishdate)) }}</small></p>
+                    </div>
+                        </a>
+                    @endforeach
+                    @foreach($stories->videos->slice(1)->all() as $video)
+                        <a href="{{ $videos->videoLink($video) }}" class="links text-dark">
+                    <div class="card-body pr-0 py-2 border-bottom">
+                        <h6 class="category-title video my-2">
+                            <img src="https://img.icons8.com/ios-filled/18/ffffff/play--v1.png" class="vid-icon" /> <b>VIDEO</b></h6>
+                        <strong class="card-text"> {{ $video->title }} </strong>
+                        <p class="card-text mb-0"><small class="text-muted">{{ $timeutil->ago(date_create($video->publishdate)) }}</small></p>
+
+                    </div>
+                        </a>
+                    @endforeach
+					@if(!$articles->isPremium())
+                    <div class="text-center">
+                        <!-- /24409412/sg_main_home_4 -->
+                        <div id='div-gpt-ad-1616648534372-0' class="w-100 mt-2 ">
+                            <script>
+                                googletag.cmd.push(function() { googletag.display('div-gpt-ad-1616648534372-0'); });
+                            </script>
+                        </div>
+                    </div>
+					@endif
+            </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <section class="break mb-4">
+        <div class="container">
+            <div class="section-title-four d-flex mb-3">
+                <span class="">.</span>
+                <h5>
+                    <b><a href="https://www.standardmedia.co.ke/sports" class="links text-dark">SPORTS</a></b></h5>
+            </div>
+            <div class="row align-items-start">
+                @foreach($stories->sports as $article)
+                <div class="col-md-3 col-12 row mx-0 {{ $loop->index < 3? 'border-right' : '' }}">
+                    <a href="{{ $articles->makeSiteUrl('sports',$article) }}" class="links text-dark" >
+                    <div class="card mb-3">
+                        <div class="item ">
+                          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                                 data-original="{{ $articles->imageLocation($article->thumbURL) }}"
+                                 onerror="this.onerror=null; this.src='{{ asset("assets/images/pic.png") }}'"
+                                 alt="{{ $article->title }}"
+                                 class="card-img-top bg-light border-0 lazy">
+                        </div>
+                        <div class="card-body p-2 pb-0">
+                            <p class="card-text mb-0"><small class="text-muted">By {{ $article->author }} | {{ $timeutil->ago(date_create($article->publishdate)) }}</small></p>
+                            <strong class="card-text text-style">{{ $article->title }}{!! $check->is_premium($article->premium) !!}</strong>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                @endforeach
+            </div>
+            <div class="col-12  line-top pt-3 mb-0"></div>
+
+        </div>
+    </section>
+	
+	         <!--sg_main_home_8!-->
+		 @if(!$articles->isPremium())
+		<section class="break mb-0">
+        <div class="container">
+			<div class="col-12 text-center ad-max mb-4 pt-0">
+			
+                    <div id='div-gpt-ad-1616648677903-2' class="w-100">
+                        <script>
+                            googletag.cmd.push(function() { googletag.display('div-gpt-ad-1616648677903-2'); });
+                        </script>
+                    </div>
+                </div>
+				</div>
+                </section>
+		  @endif
+	
+	
+	
+    <section class="dark insider mb-4">
+        <div class="container no-p">
+            <div class="section-title d-flex mb-3">
+                <span class="bg-blue">.</span>
+                <h5>
+                    <b><a href="{{ url('insider') }}" class="links text-dark">THE STANDARD INSIDER</a></b>
+                </h5>
+            </div>
+            <div class="row mx-0">
+                <div class="col-md-3 col-12 second-col bg-dark p-0 py-md-3 order-2 order-md-1">
+                    <div class=" px-0 row mx-0 insider-row">
+                        @foreach($stories->insider->slice(1,2)->all() as $article)
+                            <a href="{{ $articles->makeUrl($article) }}" class="links text-dark" >
+                        <div class="card mb-3 col-md-12 ">
+                            @if($loop->index == 0)
+                                <h3> <strong class="card-text">{{ $article->title }} {!! $check->is_premium($article->premium) !!} </strong></h3>
+                            @else
+                                <strong class="card-text {{ $loop->index==1? 'insider-minor':'' }}">{{ $article->title }} {!! $check->is_premium($article->premium) !!}</strong>
+                            @endif
+                            <div class="item  w-100">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                     data-original="{{ $articles->imageLocation($article->thumbURL) }}"
+                                     onerror="this.onerror=null; this.src='{{ asset("assets/images/pic.png") }}'"
+                                     class="mt-3 card-img-top w-100 border-0 lazy"
+                                alt="{{ $article->title }}">
+                            </div>
+                            <div class="card-body px-0 pb-0">
+                                <p class="text-white d-none">{{ $article->summary }}</p>
+
+                                <p class="card-text"><small class="text-muted">By {{ $article->author }} | {{ $timeutil->ago(date_create($article->publishdate)) }}</small></p>
+                            </div>
+                        </div>
+                            </a>
+                        @endforeach
+                    </div>
+                </div>
+                <div class="col-md-6 px-0 p-10 order-1 order-md-2">
+                    @foreach($stories->insider->slice(0,1)->all() as $article)
+                        <a href="{{ $articles->makeUrl($article) }}" class="links text-dark" >
+                    <div class="card mb-md-0 border-0 bg-dark p-3 pb-4 rounded-0 h-100">
+                        <div class="row g-0 mx-0 insider-row">
+                            <h2 class="card-title text-white insider-main d-md-none mt-2">{{ $article->title }} {!! $check->is_premium($article->premium) !!}</h2>
+                            <div class="item  w-100">
+                                <div class="row  mx-md-0 ">
+                                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                                 data-original="{{ $articles->imageLocation($article->thumbURL) }}"
+                                         onerror="this.onerror=null; this.src='{{ asset("assets/images/pic.png") }}'"
+                                         class="card-img-top w-100 border-0 lazy" alt="{{ $article->title }}">
+                                </div>
+
+                            </div>
+                            <h2 class="card-title text-white insider-main d-none d-md-block">{{ $article->title }} {!! $check->is_premium($article->premium) !!}</h2>
+                            <p class="text-white d-none d-md-block">{{ $article->summary }}</p>
+
+                            <p class="card-text"><small class="text-muted">By {{ $article->author }} | {{ $timeutil->ago(date_create($article->publishdate)) }}</small></p>
+                        </div>
+                    </div>
+                        </a>
+                    @endforeach
+                </div>
+                <div class="col-md-3 second-col bg-dark  p-0 py-md-3 order-3 order-md-3">
+                    <div class="px-0 row mx-0 insider-row">
+                        @foreach($stories->insider->slice(3,2)->all() as $article)
+                            <a href="{{ $articles->makeUrl($article) }}" class="links text-dark" >
+                        <div class="card mb-3 col-md-12">
+                            <div class="item  w-100">
+                              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                                 data-original="{{ $articles->imageLocation($article->thumbURL) }}"
+                                     onerror="this.onerror=null; this.src='{{ asset("assets/images/pic.png") }}'"
+                                     class="card-img-top w-100 border-0 lazy" alt="{{ $article->title }}">
+                            </div>
+                            <div class="card-body  px-0  pb-0">
+                                <strong class="card-text insider-minor">{{ $article->title }} {!! $check->is_premium($article->premium) !!}</strong>
+                                <p class="card-text"><small class="text-muted">By {{ $article->author }} | {{ $timeutil->ago(date_create($article->publishdate)) }}</small></p>
+                            </div>
+                        </div>
+                            </a>
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+<section class="pod mb-4">
+        <div class="container">
+            <div class="col-12  line-top pt-3"></div>
+            <div class="section-title d-flex mb-3">
+                <span class="bg-warning">.</span>
+                <h5>
+                    <b>PODCASTS</b></h5>
+            </div>
+            <div class="row">
+			
+                 @foreach($stories->sepetuko as $episode)
+                <div class="col-md-3 col-12 row mx-0">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                         <div class="col-md-4 col-3 border-right">
+ <a target="_blank" href="https://www.standardmedia.co.ke/podcast/podcasts/{{$episode->categoryid}}/{{Str::slug($episode->name)}}/episodes/{{$episode->id}}/{{Str::slug($episode->title)}}">
+                        <div class="item">
+                            <img src="{{ $episode->image == null ? asset('img/pic.jpeg') : $episode->image }}"
+                                class="card-img-top bg-light border-0">
+                        </div>
+                    </a>
+</div>
+<div class="col-md-8 col-9">
+<div class="card-body p-0">
+<img data-cfsrc="https://img.icons8.com/ios-filled/27/000000/play--v1.png" src="https://img.icons8.com/ios-filled/27/000000/play--v1.png"><br>
+  <a target="_blank" href="https://www.standardmedia.co.ke/podcast/podcasts/{{$episode->categoryid}}/{{Str::slug($episode->name)}}/episodes/{{$episode->id}}/{{Str::slug($episode->title)}}">
+                          <p class="card-text">{{$episode->title }} </p>
+                          </a>
+</div>
+</div>
+</div>
+</div>
+            
+            </div>
+				@endforeach
+				
+              
+            </div>
+            <div class="col-12  line-top pt-3 mb-0"></div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="blog_section">
+
+        <div class="container">
+
+            <div class="section-title d-flex mb-3 pl-0">
+                <span class="checkpoint" style="background: #6c757d!important">.</span>
+                <h5 class="text-black">
+                    <b>PICTURE POWER</b></h5>
+            </div>
+            <div class="blog_content slice py-1" data-delimiter="1">
+                <div class="owl-carousel owl-theme">
+                    @foreach($stories->slideshows as $slideshow)
+                    <div class="blog_item">
+                        <a href="{{ url( 'pictures/'.$slideshow->id.'/'.Str::slug($slideshow->title,'-')) }}">
+                        <div class="card bg-dark text-white mb-3 border-bottom">
+                            <div class="item ">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-original="{{ $articles->imageLocation($slideshow->imgURL) }}"
+                                     onerror="this.onerror=null; this.src='{{ asset("assets/images/pic.png") }}'"
+                                     class="card-img-top bg-light border-0 lazy" alt="{{ $slideshow->title }}">
+                            </div>
+                            <div class="card-img-overlay">
+                                <h5>
+                                    {{ $slideshow->title }} {!! $check->is_premium($article->premium) !!}
+                                </h5>
+                                <p class="card-text"><small class="text-muted">{{ date('d',strtotime($slideshow->publishdate)) }}<sup>{{ date('S',strtotime($slideshow->publishdate))}}</sup> {{ date('F Y',strtotime($slideshow->publishdate))}}</small></p>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    @endforeach
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pod mb-4">
+        <div class="container">
+            <div class="col-12  line-top pt-3"></div>
+            <div class="section-title d-flex mb-3">
+                <span class="bg-break">.</span>
+                <h5>
+                    <b><a href="https://www.standardmedia.co.ke/games" class="links text-dark">TAKE A BREAK</a></b>
+                </h5>
+            </div>
+            <div class="row">
+                <div class="col-md-4 border-right">
+                    <a href="https://www.standardmedia.co.ke/games/show/crossword/389" class="links text-dark">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-8">
+                                <div class="card-body pr-2 pt-0 pl-0">
+                                    <p class="card-text"> How long can it take you to solve a Standard Crossword? Challenge yourself now... </p>
+                                    <p class="card-text"><small class="text-muted">       Standard Gaming</small></p>
+
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="item ">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-original="{{ asset('assets/images/BlackInk256.png') }}" class="border-0 lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                    <div class="col-12  line-top"></div>
+
+                </div>
+                <div class="col-md-4 border-right">
+                    <a href="https://www.standardmedia.co.ke/games/show/sudoku/364" class="links text-dark">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-8">
+                                <div class="card-body pr-2 pt-0 pl-0">
+                                    <p class="card-text"> Break the monotony, excercise your problem solving skills. Play today's Sudoku ...
+                                    </p>
+                                    <p class="card-text"><small class="text-muted">       Standard Gaming</small></p>
+
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="item ">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-original="{{ asset('assets/images/SU-4779_P_E.jpg') }}" class="border-0 lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                    <div class="col-12  line-top"></div>
+
+                </div>
+
+                <div class="col-md-4 border-none">
+                    <a href="https://www.standardmedia.co.ke/games/show/crossword/388" class="links text-dark">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-8">
+                                <div class="card-body pr-2 pt-0 pl-0">
+                                    <p class="card-text">Join our leaderboard today, FLEX your gaming intelect. Solve Cryptic Crossword Puzzle..
+
+                                    </p>
+                                    <p class="card-text"><small class="text-muted">       Standard Gaming</small></p>
+
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="item ">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-original="{{ asset('assets/images/crossword-puzzle-1481237-1254132.png') }}" class="border-0 lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                    <div class="col-12  line-top"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="break mb-4">
+        <div class="container">
+
+            <div class="col-12 pt-3"></div>
+            <div class="section-title d-flex mb-3">
+                <span class="bg-pink">.</span>
+                <h5>
+                    <b><a href="{{ url('category/5/world') }}" class="links text-dark">WORLD</a></b></h5>
+            </div>
+            <div class="row align-items-start">
+                @foreach($stories->world as $article)
+                   
+                    <div class="col-md-3 col-12 row mx-0 {{ $loop->index < 3? 'border-right' : '' }}">
+                        <a href="{{ $articles->makeUrl($article) }}" class="links text-dark" >
+                            <div class="card mb-3">
+                                <div class="item ">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                         data-original="{{ $articles->imageLocation($article->thumbURL) }}"
+                                         onerror="this.onerror=null; this.src='{{ asset("assets/images/pic.png") }}'"
+                                         alt="{{ $article->title }}"
+                                         class="card-img-top bg-light border-0 lazy">
+                                </div>
+                                <div class="card-body p-2 pb-0">
+                                    <p class="card-text mb-0"><small class="text-muted">By {{ $article->author }} | {{ $timeutil->ago(date_create($article->publishdate)) }}</small></p>
+                                    <strong class="card-text text-style">{{ $article->title }} {!! $check->is_premium($article->premium) !!}</strong>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                @endforeach
+            </div>
+            <div class="col-12  line-top pt-3 mb-0 d-none"></div>
+        </div>
+    </section>
+
+    <section class="check mb-4">
+        <div class="container line-top pt-4 no-p">
+		@if(!$articles->isPremium())
+            <div class="row justify-content-center mb-3">
+                <div class="col-12 text-center ad-max">
+                <!-- /24409412/sg_main_home_5 -->
+                <div id='div-gpt-ad-1616648609844-0' class="w-100 ">
+                    <script>
+                        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1616648609844-0'); });
+                    </script>
+                </div>
+                </div>
+            </div>
+			@endif
+			
+            <div class="row matungulu">
+                <div class="col-md-6">
+                    <div class="section-title d-flex mb-3 pl-0">
+                        <span class="checkpoint" style="background: #a502f9!important">.</span>
+                        <h5>
+                            <b><a href="{{ url('category/480/fact-check') }}" class="links text-dark">FACT CHECK</a></b>
+                        </h5>
+                    </div>
+                    @foreach($stories->factcheck->slice(0,1)->all() as $article)
+                        <a href="{{ $articles->makeUrl($article) }}" class="links text-dark" >
+                    <div class="card mb-3 border-0">
+                        <div class="g-0 ">
+                            <h1 class="card-title">{{ $article->title }} {!! $check->is_premium($article->premium) !!} </h1>
+                            <div>
+                                <div class="item ">
+                                    <div class="row mx-md-0 ">
+                                      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                                 data-original="{{ $articles->imageLocation($article->thumbURL) }}"
+                                             onerror="this.onerror=null; this.src='{{ asset("assets/images/pic.png") }}'"
+                                             class="mb-3 h330 card-img-top bg-light border-0 lazy" alt="{{ $article->title }}">
+                                    </div>
+
+                                </div>
+                            </div>
+                            <p class="d-none d-md-block"> {{ $article->summary }}</p>
+                            <p class="card-text"><small class="text-muted">By {{ $article->author }} | {{ $timeutil->ago(date_create($article->publishdate)) }}</small></p>
+                        </div>
+                    </div>
+                        </a>
+                    @endforeach
+                </div>
+                <div class="col-md-3 border-left col-12 px-0 row mx-0">
+                    @foreach($stories->factcheck->slice(1,2)->all() as $article)
+                        <a href="{{ $articles->makeUrl($article) }}" class="links text-dark" >
+                            <div class="card mb-3 col-md-12">
+                                <div class="item ">
+                                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                                 data-original="{{ $articles->imageLocation($article->thumbURL) }}"
+                                         onerror="this.onerror=null; this.src='{{ asset("assets/images/pic.png") }}'"
+                                         class="card-img-top bg-light border-0 lazy" alt="{{ $article->title }}">
+                                </div>
+                                <div class="card-body p-2 pb-0">
+                                    <p class="card-text .text-style">{{ $article->title }} {!! $check->is_premium($article->premium) !!}</p>
+                                    <h6 class="card-title checkpoint my-2"><b>{{ strtoupper($article->category->name) }}</b></h6>
+                                    <p class="card-text"><small class="text-muted">By {{ $article->author }} | {{ $timeutil->ago(date_create($article->publishdate)) }}</small></p>
+                                </div>
+                            </div>
+                        </a>
+                    @endforeach
+                </div>
+                <div class="col-md-3 border-left col-12">
+                    @foreach($stories->health as $article)
+                        <a href="{{ $articles->makeUrl($article) }}" class="links text-dark" >
+                            <div class="card-body px-0  pb-0 {{ $loop->index == 0 ? 'pt-0' : '' }}  {{ $loop->index < 3 ? 'border-bottom' : '' }}">
+                                <strong class="card-text text-style"> {{ $article->title }} {!! $check->is_premium($article->premium) !!} </strong>
+                                <h6 class="category-title health py-2 mb-0"><b>{{ strtoupper($article->category->name) }}</b></h6>
+                                @if($loop->index == 0 )<p class="mb-0 d-none d-md-block">{{ $article->summary }}</p>@endif
+                                <p class="card-text"><small class="text-muted">By {{ $article->author }} | {{ $timeutil->ago(date_create($article->publishdate)) }}</small></p>
+                            </div>
+                        </a>
+                    @endforeach
+                </div>
+
+            </div>
+            <div class="col-12  line-top"></div>
+        </div>
+    </section>
+
+
+    <section class="break mb-4 bg-blacker">
+        <div class="container py-md-5">
+            <div class="col-12  line-top pt-3 mb-0"></div>
+
+            <div class="row">
+                <div class="">
+                    <div class="epaper-img">
+                        <a href="https://newsstand.standardmedia.co.ke/">
+                            <img src="{{ asset('assets/img/footer-logo.PNG') }}" class="w-100"></a>
+                    </div>
+                    <div class="epaper-txt">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="epaper-img">
+                            <a href="https://newsstand.standardmedia.co.ke/">
+                                <img src="https://www.standardmedia.co.ke/assets/images/logo.png" class="d-none">
+                            </a>
+                        </div>
+                        <div class="epaper-txt pl-2" style="font-size:1.5rem; margin-bottom: 10%">
+                            Subscribe to The Standard epaper
+                        </div>
+
+                        <a href="https://newsstand.standardmedia.co.ke/" class="pl-2"><button class="btn btn-primary sd-epaper">Subscribe Now <i class="fa fa-angle-right"></i></button></a>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="item  main-paper-img">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                 data-original="https://cdn.standardmedia.co.ke/images/{{ strtolower( date('l')) .'/'.date('Y_m_d')}}_paper.png"
+                                 onerror="this.onerror=null; this.src='{{ asset("assets/images/pic.png") }}'"
+                                 class="epaper_img-block bg-light border-0 lazy">
+                        </div>
+
+                        <div class="main-paper-txt">
+                            <h3>The Standard</h3>
+                            Read The Standard newspaper without interuption on all your devices.
+                            <a href="https://newsstand.standardmedia.co.ke/"><button class="btn btn-primary sd-epaper-small">Subscribe <i class="fa fa-angle-right"></i></button></a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        @php
+                            $mtoday = 0;
+                            $dofweek = date('Y-m-d');
+                            if(date('w')==5){
+
+                            }else{
+                                if(date('w')==6){
+                                    $mtoday = date('w')-5;
+                                }else{
+                                $mtoday = date('w')+2;
+                                }
+                            }
+                                $nairobiandate=date_create(date('Y-m-d'));
+                                $nairobiandate = date_sub($nairobiandate,date_interval_create_from_date_string($mtoday." days"));
+                                $dofweek = date_format($nairobiandate,"Y-m-d");
+                                $nairobiandate = date_format($nairobiandate,"Y_m_d");
+                              //  echo $nairobiandate. ' '.$dofweek;
+                                $dofweek= strtolower(date("l",strtotime($dofweek)));
+                        @endphp
+                        <div class="item  main-paper-img">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                 data-original="https://cdn.standardmedia.co.ke/images/{{strtolower($dofweek).'/'.$nairobiandate }}_paper2.png"
+                                 onerror="this.onerror=null; this.src='{{ asset("assets/images/pic.png") }}'"
+                                 class="epaper_img-block bg-light border-0 lazy">
+                        </div>
+
+                        <div class="main-paper-txt">
+                            <h3>The Nairobian</h3>
+                            Read The Nairobian newspaper for <strong>Sh35.00</strong> only.
+                            <a href="https://newsstand.standardmedia.co.ke/"><button class="btn btn-primary sd-epaper-small">Subscribe <i class="fa fa-angle-right"></i></button></a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="item  main-paper-img">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                 data-original="https://www.standardmedia.co.ke/flash/epaper/travelog202010.jpg"
+                                 onerror="this.onerror=null; this.src='{{ asset("assets/images/pic.png") }}'"
+                                 class="epaper_img-block bg-light border-0 lazy">
+                        </div>
+
+                        <div class="main-paper-txt">
+                            <h3>Travelog</h3>
+                            Read the Travelog magazine online for <strong>FREE</strong>
+                            <a href="https://travelog.ke/magazine"><button class="btn btn-primary sd-epaper-small">Subscribe <i class="fa fa-angle-right"></i></button></a>
+                        </div>
+                    </div>
+
+                    {{--                    <div class="col-md-3">--}}
+                    {{--                        <div class="item  main-paper-img">--}}
+                    {{--                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="--}}
+                    {{--                                 data-original="https://image.isu.pub/201110042603-4f3676e58e9769dcafebe485646fe6dd/jpg/page_1.jpg"--}}
+                    {{--                                 class="epaper_img-block bg-light border-0 lazy">--}}
+                    {{--                        </div>--}}
+
+                    {{--                        <div class="main-paper-txt">--}}
+                    {{--                            <h3>The Nairobian</h3>--}}
+                    {{--                            Read The Nairobian newspaper for <strong>Sh35.00</strong> only.--}}
+                    {{--                            <a href="https://newsstand.standardmedia.co.ke/"><button class="btn btn-primary sd-epaper-small">Subscribe <i class="fa fa-angle-right"></i></button></a>--}}
+                    {{--                        </div>--}}
+                    {{--                    </div>--}}
+                </div>
+            </div>
+
+            <div class="col-12  line-top pt-3 mb-0"></div>
+
+        </div>
+    </section>
+
+    <section class="break mb-2">
+        <div class="container">
+            <div class="section-title d-flex mb-3">
+                <span class="bg-brown">.</span>
+                <h5>
+                    <b><a href="https://www.standardmedia.co.ke/entertainment" class="links text-dark">ENTERTAINMENT</a></b></h5>
+            </div>
+            <div class="row align-items-start">
+                @foreach($stories->entertainment as $article)
+                    <div class="col-md-3 col-12 row mx-0 {{ $loop->index < 3? 'border-right' : '' }}">
+                        <a href="{{ $articles->makeSiteUrl('entertainment',$article) }}" class="links text-dark" >
+                            <div class="card mb-3">
+                                <div class="item ">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                         data-original="{{ $articles->imageLocation($article->thumbURL) }}"
+                                         onerror="this.onerror=null; this.src='{{ asset("assets/images/pic.png") }}'"
+                                         alt="{{ $article->title }}"
+                                         class="card-img-top bg-light border-0 lazy">
+                                </div>
+                                <div class="card-body p-2 pb-0">
+                                    <p class="card-text mb-0"><small class="text-muted">By {{ $article->author }} | {{ $timeutil->ago(date_create($article->publishdate)) }}</small></p>
+                                    <strong class="card-text text-style">{{ $article->title }} {!! $check->is_premium($article->premium) !!}</strong>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                @endforeach
+            </div>
+            <div class="col-12  line-top pt-3 mb-0"></div>
+
+        </div>
+    </section>
+
+    <section class="check mb-4">
+        <style>
+            .h180 {
+                height: 180px;
+                object-fit: cover;
+            }
+        </style>
+
+        <div class="container pt-0">
+		
+		@if(!$articles->isPremium())
+            <div class="row justify-content-center mb-3">
+                <div class="col-12 text-center ad-max">
+                    <!-- /24409412/sg_main_home_6 -->
+                    <div id='div-gpt-ad-1616648677903-0' class="w-100 ">
+                        <script>
+                            googletag.cmd.push(function() { googletag.display('div-gpt-ad-1616648677903-0'); });
+                        </script>
+                    </div>
+                </div>
+
+            </div>
+			@endif
+            <div class="row ">
+                <div class="row col-md-8 align-content-start mx-0  pr-md-0">
+                    <div class="section-title d-flex mb-3 col-md-12 pl-0">
+                        <span class="bg-blue">.</span>
+                        <h5><b>THE NAIROBIAN</b></h5>
+                    </div>
+                    <div class="col-md-7 px-0">
+                        @foreach($stories->nairobian->slice(0,1) as $article)
+                            <a href="{{ $articles->makeSiteUrl('thenairobian',$article) }}" class="links text-dark" >
+                        <div class="card mb-3 border-0">
+                                <div class="item row mx-md-0 ">
+                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                             data-original="{{ $articles->imageLocation($article->thumbURL) }}"
+                                             onerror="this.onerror=null; this.src='{{ asset("assets/images/pic.png") }}'"
+                                             class="mb-3 h330 card-img-top bg-light border-0 lazy" alt="{{ $article->title }}">
+                                </div>
+
+                            <h2 class="card-title"><b>{{ $article->title }} {!! $check->is_premium($article->premium) !!}</b></h2>
+                            <p class="card-text"><small class="text-muted">By
+                                    {{ $article->author }} | {{ $timeutil->ago(date_create($article->publishdate)) }}</small></p>
+                        </div>
+                            </a>
+                        @endforeach
+                        @foreach($stories->nairobian->slice(1,1) as $article)
+                                <a href="{{ $articles->makeSiteUrl('thenairobian',$article) }}" class="links text-dark" >
+                        <div class="card mb-2">
+                            <div class="row g-0 mx-0">
+                                <div class="col-4 pl-0">
+                                    <div class="item ">
+                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                             data-original="{{ $articles->imageLocation($article->thumbURL) }}"
+                                             onerror="this.onerror=null; this.src='{{ asset("assets/images/pic.png") }}'"
+                                             alt="{{ $article->title }}"
+                                             class=" bg-light border-0 lazy"></div>
+                                </div>
+                                <div class="col-8 px-0">
+                                    <div class="card-body pl-0 py-2">
+                                        <h5 class="card-text"><b>{{ $article->title }} {!! $check->is_premium($article->premium) !!}</b></h5>
+                                    </div>
+                                </div>
+                                <p class="card-text mt-2"><small class="text-muted">By
+                                        {{ $article->author }} | {{ $timeutil->ago(date_create($article->publishdate)) }}</small></p>
+                            </div>
+                        </div>
+                                </a>
+                        @endforeach
+                    </div>
+                    <div class="col-md-5 col-12 pl-0">
+                        @foreach($stories->nairobian->slice(2)->all() as $article)
+                            <a href="{{ $articles->makeSiteUrl('thenairobian',$article) }}" class="links text-dark" >
+                        <div class="card mb-3 col-md-12 no-p">
+                            <div class="item ">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                     data-original="{{ $articles->imageLocation($article->thumbURL) }}"
+                                     onerror="this.onerror=null; this.src='{{ asset("assets/images/pic.png") }}'"
+                                     alt="{{ $article->title }}"
+                                     class="card-img-top bg-light border-0 lazy h180">
+                            </div>
+                            <div class="card-body p-2 pb-0">
+                                <h5 class="card-text"><b>{{ $article->title }} {!! $check->is_premium($article->premium) !!}</b></h5>
+                                <h6 class="category-title text-blue"><b>{{ !is_null($article->category) ? strtoupper($article->category->name) :'THE  NAIROBIAN' }}</b></h6>
+                                <p class="card-text"><small class="text-muted">By
+                                        {{ $article->author }} | {{ $timeutil->ago(date_create($article->publishdate)) }}</small></p>
+                            </div>
+                        </div>
+                            </a>
+                        @endforeach
+                    </div>
+                </div>
+                <div class="col-md-4 border-left col-12 pr-md-0">
+                    <div class="section-title d-flex mb-3"><span class="" style="background-color: darkgreen;">.</span>
+                        <h5><b>FARM KENYA</b></h5>
+                    </div>
+                    @foreach($stories->farmers->slice(0,1) as $article)
+                        <a href="{{ $articles->makeSiteUrl('farmkenya',$article) }}" class="links text-dark" >
+                    <div class="card mb-3 border-0">
+                        <div class="item ">
+                            <div class="row  mx-md-0">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                     data-original="{{ $articles->imageLocation($article->thumbURL) }}"
+                                     onerror="this.onerror=null; this.src='{{ asset("assets/images/pic.png") }}'"
+                                     alt="{{ $article->title }}"
+                                     class="mb-3 h250 card-img-top bg-light border-0 lazy">
+                            </div>
+                        </div>
+                        <h4 class="card-title"><b>{{ $article->title }} {!! $check->is_premium($article->premium) !!}</b></h4>
+                        <p class="card-text"><small class="text-muted">By
+                                {{ $article->author }} | {{ $timeutil->ago(date_create($article->publishdate)) }}</small></p>
+                    </div>
+                        </a>
+                    @endforeach
+                    @foreach($stories->farmers->slice(1,2)->all() as $article)
+                        <a href="{{ $articles->makeSiteUrl('farmkenya',$article) }}" class="links text-dark" >
+                    <div class="card mb-2">
+                        <div class="row g-0 mx-0">
+                            <div class="col-4 pl-0">
+                                <div class="item ">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                         data-original="{{ $articles->imageLocation($article->thumbURL) }}"
+                                         onerror="this.onerror=null; this.src='{{ asset("assets/images/pic.png") }}'"
+                                         class=" bg-light border-0 lazy"></div>
+                            </div>
+                            <div class="col-8 px-0">
+                                <div class="card-body pl-0 py-2">
+                                    <h5 class="card-text"><b>{{ $article->title }} {!! $check->is_premium($article->premium) !!}</b> </h5>
+                                </div>
+                            </div>
+                            <p class="card-text mt-2"><small class="text-muted">By
+                                    {{ $article->author }} | {{ $timeutil->ago(date_create($article->publishdate)) }}</small></p>
+                        </div>
+                    </div>
+                        </a>
+                    @endforeach
+                </div>
+            </div>
+            <div class="col-12  line-top"></div>
+        </div>
+    </section>
+
+    <section class="break mb-4">
+        <div class="container">
+            <div class="section-title d-flex mb-3">
+                <span class="bg-pink">.</span>
+                <h5>
+                    <b><a href="https://www.standardmedia.co.ke/evewoman" class="links text-dark">EVE WOMAN</a></b></h5>
+            </div>
+            <div class="row align-items-start">
+                @foreach($stories->eve as $article)
+                    <div class="col-md-3 col-12 row mx-0 {{ $loop->index < 3? 'border-right' : '' }}">
+                        <a href="{{ $articles->makeSiteUrl('evewoman',$article) }}" class="links text-dark" >
+                            <div class="card mb-3">
+                                <div class="item ">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                         data-original="{{ $articles->imageLocation($article->thumbURL) }}"
+                                         onerror="this.onerror=null; this.src='{{ asset("assets/images/pic.png") }}'"
+                                         alt="{{ $article->title }}"
+                                         class="card-img-top bg-light border-0 lazy">
+                                </div>
+                                <div class="card-body p-2 pb-0">
+                                    <p class="card-text mb-0"><small class="text-muted">By {{ $article->author }} | {{ $timeutil->ago(date_create($article->publishdate)) }}</small></p>
+                                    <strong class="card-text text-style">{{ $article->title }} {!! $check->is_premium($article->premium) !!} </strong>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                @endforeach
+            </div>
+            <div class="col-12  line-top pt-3 mb-0"></div>
+        </div>
+    </section>
+
+    <section class="break mb-4 d-none">
+        <div class="container">
+            <div class="section-title d-flex mb-3">
+                <span class="bg-blue">.</span>
+                <h5>
+                    <b><a href="https://www.standardmedia.co.ke/thenairobian" class="links text-dark">THE NAIROBIAN</a></b></h5>
+            </div>
+            <div class="row align-items-start">
+                @foreach($stories->nairobian as $article)
+                    <div class="col-md-3 col-12 row mx-0 {{ $loop->index < 3? 'border-right' : '' }}">
+                        <a href="{{ $articles->makeSiteUrl('thenairobian',$article) }}" class="links text-dark" >
+                            <div class="card mb-3">
+                                <div class="item ">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                         data-original="{{ $articles->imageLocation($article->thumbURL) }}"
+                                         onerror="this.onerror=null; this.src='{{ asset("assets/images/pic.png") }}'"
+                                         alt="{{ $article->title }}"
+                                         class="card-img-top bg-light border-0 lazy" alt="{{ $article->title }}">
+                                </div>
+                                <div class="card-body p-2 pb-0">
+                                    <p class="card-text"><small class="text-muted">By {{ $article->author }} | {{ $timeutil->ago(date_create($article->publishdate)) }}</small></p>
+                                    <strong class="card-text text-style">{{ $article->title }} {!! $check->is_premium($article->premium) !!} </strong>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                @endforeach
+            </div>
+            <div class="col-12  line-top pt-3 mb-0"></div>
+        </div>
+    </section>
+    <section class="break mb-4 d-none">
+        <div class="container">
+            <div class="section-title d-flex mb-3">
+                <span class="" style="background-color: darkgreen;">.</span>
+                <h5>
+                    <b><a href="https://www.standardmedia.co.ke/farmkenya" class="links text-dark">FARM KENYA</a></b></h5>
+            </div>
+            <div class="row align-items-start">
+                @foreach($stories->farmers as $article)
+                    <div class="col-md-3 col-12 row mx-0 {{ $loop->index < 3? 'border-right' : '' }}">
+                        <a href="{{ $articles->makeSiteUrl('farmkenya',$article) }}" class="links text-dark" >
+                            <div class="card mb-3">
+                                <div class="item ">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                         data-original="{{ $articles->imageLocation($article->thumbURL) }}"
+                                         onerror="this.onerror=null; this.src='{{ asset("assets/images/pic.png") }}'"
+                                         alt="{{ $article->title }}"
+                                         class="card-img-top bg-light border-0 lazy">
+                                </div>
+                                <div class="card-body p-2 pb-0">
+                                    <p class="card-text"><small class="text-muted">By {{ $article->author }} | {{ $timeutil->ago(date_create($article->publishdate)) }}</small></p>
+                                    <strong class="card-text text-style">{{ $article->title }} {!! $check->is_premium($article->premium) !!}</strong>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                @endforeach
+            </div>
+            <div class="col-12  line-top pt-3 mb-0"></div>
+        </div>
+    </section>
+
+    <section class="break mb-4 d-none">
+        <div class="container">
+            <div class="section-title d-flex mb-3">
+                <span class="bg-pink">.</span>
+                <h5>
+                    <b><a href="https://www.standardmedia.co.ke/travelog" class="links text-dark">TRAVELOG</a></b></h5>
+            </div>
+            <div class="row align-items-start">
+                @foreach($stories->travelog as $article)
+                    <div class="col-md-3 col-12 row mx-0 {{ $loop->index < 3? 'border-right' : '' }}">
+                        <a href="{{ $articles->makeSiteUrl('travelog',$article) }}" class="links text-dark" >
+                            <div class="card mb-3">
+                                <div class="item ">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                         data-original="{{ $articles->imageLocation($article->thumbURL) }}"
+                                         onerror="this.onerror=null; this.src='{{ asset("assets/images/pic.png") }}'"
+                                         alt="{{ $article->title }}"
+                                         class="card-img-top bg-light border-0 lazy">
+                                </div>
+                                <div class="card-body p-2 pb-0">
+                                    <p class="card-text"><small class="text-muted">By {{ $article->author }} | {{ $timeutil->ago(date_create($article->publishdate)) }}</small></p>
+                                    <strong class="card-text text-style">{{ $article->title }} {!! $check->is_premium($article->premium) !!}</strong>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                @endforeach
+            </div>
+            <div class="col-12  line-top pt-3 mb-0"></div>
+        </div>
+    </section>
+
+@endsection
+
+@section('js')
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" defer></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+<script>
+$(function() {
+    $("img.lazy").lazyload({effect : "fadeIn"});
+});
+</script>
+    <script>
+
+        (function() {
+            var a = setInterval( function() {
+                if ( typeof window.jQuery === 'undefined' ) {
+                    return;
+                }
+                var owl = $('.owl-carousel').owlCarousel({
+                    loop: true,
+                    margin: 10,
+                    dots: false,
+                    nav: true,
+                    autoplay: true,
+                    smartSpeed: 3000,
+                    autoplayTimeout: 7000,
+                    responsive: {
+                        0: {
+                            items: 1
+                        },
+                        600: {
+                            items: 2
+                        },
+                        1000: {
+                            items: 4
+                        },
+                        1200: {
+                            items: 5
+                        }
+                    }
+                });
+                if(owl == null)
+                    return;
+
+                clearInterval( a );
+
+                console.log( 'jQuery is loaded' ); // call your function with jQuery instead of this
+            }, 500 );
+        })();
+
+        // $('.owl-carousel').owlCarousel({
+        //     loop: true,
+        //     margin: 10,
+        //     dots: true,
+        //     nav: true,
+        //     autoplay: true,
+        //     smartSpeed: 3000,
+        //     autoplayTimeout: 7000,
+        //     responsive: {
+        //         0: {
+        //             items: 1
+        //         },
+        //         600: {
+        //             items: 2
+        //         },
+        //         1000: {
+        //             items: 4
+        //         },
+        //         1200: {
+        //             items: 5
+        //         }
+        //     }
+        // })
+
+    </script>
+@endsection
+
+
